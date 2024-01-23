@@ -1,0 +1,170 @@
+:root {
+    --background: #f9f4ef;
+    --main: #fffffe;
+    --headline: #020826;
+    --highlight: #8c7851;
+    --subheadline: #716040;
+    --reddish: #f25042;
+    --notgreenbutthatsok: #8c7851;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--headline);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--headline);
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-color: var(--background);
+    color: var(--headline);
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    margin-top: 30vh;
+}
+
+#welcome-section p {
+    color: var(--highlight);
+    font-size: 25px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+#projects {
+    background-color: var(--subheadline);
+    color: var(--background);
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects .project-tile {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    text-decoration: none;
+    color: var(--subheadline);
+    border-radius: 5px;
+}
+
+#projects .project-tile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects .project-tile p {
+    padding: 20px;
+}
+
+#contact {
+    background-color: var(--background);
+    color: var(--headline);
+}
+
+#contact h1 {
+    margin-top: 300px;
+}
+
+#contact .nombrecache {
+    color: var(--highlight);
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#contact .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#contact .social-media {
+    text-decoration: none;
+    color: var(--headline);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 22px;
+}
+
+#contact .social-media:hover {
+    transform: translateY(10px);
+}
+
+footer {
+    border-top: 3px solid var(--highlight);
+    color: var(--headline);
+    font-size: 15px;
+    padding: 30px;
+}
+
+.gagne {
+    color: var(--notgreenbutthatsok);
+}
+  
+.perdu {
+    color: var(--reddish);
+}

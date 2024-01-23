@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Secret number</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/nombreCache.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <section id="welcome-section">
+    <p>Find the secret number between 0 and 100<br> in 10 attempts maximum<br><br>
+    <label for="prop">Your proposition : </label>
+    <input type="text" id="prop" name="proposition" value="" /><br />
+    <div id="message">   
+    </div>
+    <div id="partieEncours">
+      <button id="jouerBtn">Play</button> 
+      <button id="finPartieBtn">Give up forever</button>
+    </div>
+    <div id="partieTerminee" class="cache">
+      <button id="debutPartieBtn">Try again (yesm this is cheating)</button>
+    </div>
+    </p>
+    </section>
+  </body>
+</html>
